@@ -25,7 +25,7 @@ After running node index.js you will answer a few questions and your README.md w
 
 ## License
 
-Licensed under the [MIT]((https://opensource.org/licenses/MIT)) license
+Licensed under the [MIT](https://opensource.org/licenses/MIT) license
 
 ## Contributing
 
