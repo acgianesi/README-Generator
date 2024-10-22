@@ -2,11 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "MIT") {
-    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
   } else if (license === "Apache") {
-    return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
   } else if (license === "Boost") {
-    return "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)"
+    return "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
   }
     return "";
   }
@@ -16,11 +16,11 @@ function renderLicenseBadge(license) {
 
 function renderLicenseLink(license) { 
   if (license === "MIT") {
-    return "(https://opensource.org/licenses/MIT)"
+    return "(https://opensource.org/licenses/MIT)";
   } else if (license === "Apache") {
-    return "[(https://opensource.org/licenses/Apache-2.0)"
+    return "[(https://opensource.org/licenses/Apache-2.0)";
   } else if (license === "Boost") {
-    return "[(https://www.boost.org/LICENSE_1_0.txt)"
+    return "[(https://www.boost.org/LICENSE_1_0.txt)";
   }
   if (license === null) {
     return "";
