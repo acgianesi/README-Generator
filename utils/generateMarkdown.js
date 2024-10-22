@@ -8,13 +8,13 @@ function renderLicenseBadge(license) {
   } else if (license === "Boost") {
     return "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
   }
-    return "";
-  }
+  return "";
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 
-function renderLicenseLink(license) { 
+function renderLicenseLink(license) {
   if (license === "MIT") {
     return "(https://opensource.org/licenses/MIT)";
   } else if (license === "Apache") {
@@ -22,18 +22,17 @@ function renderLicenseLink(license) {
   } else if (license === "Boost") {
     return "[(https://www.boost.org/LICENSE_1_0.txt)";
   }
-  if (license === null) {
-    return "";
-  }
+  return "";
+
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 
 function renderLicenseSection(license) {
-if(license === null)
-return "";
-return `Licensed under the ${license} license`
+  if (license === null)
+    return "";
+  return `Licensed under the [${license}](${renderLicenseLink(license)}) license`;
 }
 
 // TODO: Create a function to generate markdown for README
