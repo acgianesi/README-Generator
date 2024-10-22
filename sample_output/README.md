@@ -17,7 +17,7 @@ Purpose of this project is to create a README generator.
 
 ## Installation 
 
-You just need to run node index.js in the README Generator file.
+You need to run node index.js in the README Generator folder.
 
 ## Usage
 
