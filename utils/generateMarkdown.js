@@ -7,8 +7,8 @@ function renderLicenseBadge(license) {
     return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
   } else if (license === "Boost") {
     return "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
-  }
-  return "";
+  } else if (license === "No License")
+    return "";
 }
 
 // TODO: Create a function that returns the license link
@@ -18,11 +18,11 @@ function renderLicenseLink(license) {
   if (license === "MIT") {
     return "(https://opensource.org/licenses/MIT)";
   } else if (license === "Apache") {
-    return "[(https://opensource.org/licenses/Apache-2.0)";
+    return "(https://opensource.org/licenses/Apache-2.0)";
   } else if (license === "Boost") {
-    return "[(https://www.boost.org/LICENSE_1_0.txt)";
-  }
-  return "";
+    return "(https://www.boost.org/LICENSE_1_0.txt)";
+  } else if (license === "No License")
+    return "";
 
 }
 
@@ -30,7 +30,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 
 function renderLicenseSection(license) {
-  if (license === null)
+  if (license === "No License")
     return "";
   return `Licensed under the [${license}](${renderLicenseLink(license)}) license`;
 }
