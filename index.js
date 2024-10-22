@@ -31,7 +31,7 @@ const questions = [
         message: "List any collaborators",
     },
     {
-        type: "checkbox",
+        type: "list",
         name: "license",
         message: "Select a license.",
         choices: ["MIT", "Apache", "Boost"],
