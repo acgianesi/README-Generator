@@ -32,7 +32,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license === "No License")
     return "";
-  return `Licensed under the [${license}](${renderLicenseLink(license)}) license`;
+  return `Licensed under the [${license}]${renderLicenseLink(license)} license`;
 }
 
 // TODO: Create a function to generate markdown for README
