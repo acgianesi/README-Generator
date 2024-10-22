@@ -27,14 +27,14 @@ const questions = [
     },
     {
         type: "input",
-        name: "contribuiting",
+        name: "contributing",
         message: "List any collaborators",
     },
     {
         type: "checkbox",
         name: "license",
         message: "Select a license.",
-        choices: ["", "", ""],
+        choices: ["x", "y", "z"],
     },
     {
         type: "input",
